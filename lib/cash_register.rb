@@ -8,7 +8,7 @@ class CashRegister
 
   def add_item(title,price,quantity = 1)
     i = 0
-    add_item.each.times do |quantity|
+    title.each.times do |quantity|
     if i>quantity
       @items.push(title)
       i += 1
@@ -19,7 +19,6 @@ class CashRegister
       @total = @total + price*quantity
       @last_transaction_amount = price*quantity
       @total
-    end
   end
   
   def apply_discount()
