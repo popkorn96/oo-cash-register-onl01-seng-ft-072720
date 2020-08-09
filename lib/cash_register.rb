@@ -19,6 +19,7 @@ class CashRegister
       @total = @total + price*quantity
       @last_transaction_amount = price*quantity
       @total
+    end
   end
   
   def apply_discount()
