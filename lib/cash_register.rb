@@ -8,7 +8,7 @@ class CashRegister
 
   def add_item(title,price,quantity = 1)
     i = 0
-    title.each.times do |quantity|
+    quantity.times do |quantity|
     if i>quantity
       @items.push(title)
       i += 1
