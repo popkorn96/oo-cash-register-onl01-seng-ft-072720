@@ -11,10 +11,8 @@ class CashRegister
     quantity.times do
     if i>quantity
       @items.push(title)
-      i += 1
     else i<quantity
       @items.push(title)
-      i += 1
     end
       @total = @total + price*quantity
       @last_transaction_amount = price*quantity
