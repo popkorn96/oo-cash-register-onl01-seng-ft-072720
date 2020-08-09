@@ -12,7 +12,7 @@ class CashRegister
       @items.push(title)
       i += 1
     else i<quantity
-      @items.times.push(title*quantity)
+      @items.times.push(title)
       i += 1
     end
       @total = @total + price*quantity
